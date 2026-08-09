@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { site } from '@/data/site';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
@@ -24,11 +25,15 @@ export function Hero() {
         </div>
 
         <div className="relative flex justify-center md:justify-end">
-          {/* TODO: sustituir por foto real del equipo (next/image) */}
-          <div className="relative aspect-[4/5] w-full max-w-md self-end bg-surface-card">
-            <span className="absolute inset-0 grid place-items-center text-xs font-semibold uppercase tracking-widest text-black/30">
-              Foto del equipo
-            </span>
+          <div className="relative aspect-[4/5] w-full max-w-md self-end">
+            <Image
+              src="/images/equipo-hero.png"
+              alt="Equipo legal de Sárraga & Asociados"
+              fill
+              priority
+              sizes="(min-width: 768px) 28rem, 90vw"
+              className="object-contain object-bottom"
+            />
             <span className="absolute left-2 top-1/3 rounded-md bg-brand-violet px-2 py-1 text-[10px] font-semibold text-white">
               @sarragalegal
             </span>
