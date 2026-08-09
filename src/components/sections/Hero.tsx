@@ -25,13 +25,13 @@ export function Hero() {
         </div>
 
         <div className="relative flex justify-center md:justify-end">
-          <div className="relative aspect-[4/5] w-full max-w-md self-end">
+          <div className="relative aspect-[4/5] w-full max-w-md self-end md:max-w-xl">
             <Image
               src="/images/equipo-hero.png"
               alt="Equipo legal de Sárraga & Asociados"
               fill
               priority
-              sizes="(min-width: 768px) 28rem, 90vw"
+              sizes="(min-width: 768px) 36rem, 90vw"
               className="object-contain object-bottom"
             />
             <span className="absolute left-2 top-1/3 rounded-md bg-brand-violet px-2 py-1 text-[10px] font-semibold text-white">
