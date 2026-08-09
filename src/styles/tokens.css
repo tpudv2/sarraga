@@ -1,0 +1,31 @@
+/**
+ * Design tokens — Sárraga & Asociados
+ * Fuente única de verdad para color, tipografía y radios.
+ * Tailwind (tailwind.config.ts) referencia estas variables.
+ */
+:root {
+  /* Marca */
+  --color-violet: #5e17eb;
+  --color-yellow: #fce300;
+  --color-red: #ff1e00;
+  --color-ink: #0a0a0a;
+
+  /* Superficies */
+  --color-surface: #ffffff;
+  --color-surface-muted: #e7e7e7;
+  --color-surface-card: #d9d9d9;
+  --color-surface-dark: #0a0a0a;
+
+  /* Texto */
+  --color-text: #0a0a0a;
+  --color-text-muted: #6b6b6b;
+  --color-text-inverse: #ffffff;
+
+  /* Tipografía (las familias las inyecta next/font en layout.tsx) */
+  --font-display: 'Anton';
+  --font-sans: 'Manrope';
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: clamp(1rem, 4vw, 2.5rem);
+}
