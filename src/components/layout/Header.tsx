@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { mainNav } from '@/data/navigation';
@@ -18,10 +19,14 @@ export function Header() {
     <header className="bg-surface-muted">
       <Container className="flex items-center justify-between py-4">
         <Link href="/" className="leading-none hover:text-inherit">
-          <span className="font-display text-xl tracking-wide">SÁRRAGA</span>
-          <span className="ml-1 align-super text-[9px] font-semibold tracking-widest text-brand-ink/60">
-            &amp; ASOCIADOS
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Sárraga Abogados"
+            width={1120}
+            height={338}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         <nav aria-label="Principal" className="hidden items-center gap-8 md:flex">
