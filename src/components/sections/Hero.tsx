@@ -6,7 +6,7 @@ import { Container } from '@/components/ui/Container';
 /** Hero principal: titular grande, CTA y retrato del equipo. */
 export function Hero() {
   return (
-    <section className="bg-hero-pattern">
+    <section className="flex min-h-[90vh] items-center bg-hero-pattern">
       <Container className="grid items-center gap-8 py-10 md:grid-cols-2 md:py-0">
         <div className="py-6 md:py-16">
           <h1 className="text-[clamp(2.75rem,7vw,5.5rem)] text-brand-ink">
